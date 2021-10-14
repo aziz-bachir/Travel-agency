@@ -23,6 +23,10 @@
     margin-right: 5%;
 }
 
+a{
+    cursor: pointer;
+}
+
 /* Navbar section */
 
 .nav{
@@ -112,32 +116,73 @@
     line-height: 1.6;
     width:70%;
     font-size: 20px;
+    margin-left: 12%;
     
     
 }
 #home-vid{
     max-width: 100%;
     height: auto;
+    border-radius: 500px;
 }
 #home-vid{
     margin-top: 50px;
 }
 #pricetomars{
     color: ivory;
-    margin-top: 150px;
-   margin-left: 90px;
-   margin-right: 350px; 
+    margin-top: 120px;
+   margin-left: 190px;
+   margin-right:60px; 
     text-align: center;
-    font-size: 67px;
+    font-size: 47px;
    
     font-family: Arial, Helvetica, sans-serif;
 }
+#datetomars{
+    color: ivory;
+    margin-top: 120px;
+    margin-bottom: 12px;
+   margin-left:20px;
+   margin-right:460px; 
+    text-align: center;
+    font-size: 30px;
+   
+    font-family: Arial, Helvetica, sans-serif;
 
+}
+.aboutus{
+    color: lavender;
+    margin-top: 100px;
+}
+.info{
+    color: lemonchiffon;
+    font: 24px/28px D-DIN-Bold,Arial,Verdana,sans-serif;
+    text-align: center;
+}
 
-
-
-
-
+ .content{
+    height: 400px;
+    width: 750px;
+    margin-left: 22%;
+    margin-top: 10%;
+    overflow: hidden;
+    box-shadow: 1px 1px 15px rgba(0,0,0,0.4);
+  }
+  .content .images{
+    height: 100%;
+    width: 100%;
+    
+  }
+  .images img{
+    height: 100%;
+    width: 100%;
+    border-radius: 200px;
+  } 
+ #demo{
+     color: lemonchiffon;
+     margin-bottom: 50px;
+     font-size: 30px;
+ }
 
 
 
