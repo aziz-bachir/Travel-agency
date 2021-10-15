@@ -4,7 +4,7 @@ $(document).ready(function(){
         var $toMars =  `<div class="mars-container"> 
         <style>
         body {
-          background-image: url('https://wallpaperaccess.com/full/1608.jpg');
+          background-image: url('./imgs/2000.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;  
           background-size: cover;
@@ -259,7 +259,16 @@ $(document).ready(function(){
     })
     $("#bo").click(function(){
       $("#content").html(" ")
-      var $bookNow =  `div class="background" id="content">
+      var $bookNow =  `<div class="background" id="content">
+      <style>
+        body {
+          background-image: url('./imgs/Galaxy.jpg');
+          background-repeat: no-repeat;
+          background-attachment: fixed;  
+          background-size: cover;
+          z-index: 1;
+        }
+        </style>
       <div class="text-home">
           
           <div class="login-box">
