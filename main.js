@@ -66,25 +66,51 @@ $(document).ready(function(){
          </div>`
         $("#content").append($toMars)
     })
-    $(".logo").click(function(){
-        $("#content").html(" ")
+    // $(".logo").click(function(){
+    //     $("#content").html(" ")
         
-        var $homePage= `<div class="background" id="content">
-        <div class="text-home">
-        <h1 id="main-title">SPACE & BEYOND</h1>
-        <h1 id="bookticket">Book your ticket now</h1>
-        <center>
-        <video id="home-vid" width="60%" height="40%" autoplay muted>
-            <source src="home vid.mp4.mp4" type="video/mp4">
-            <source src="movie.ogg" type="video/ogg">
-            Your browser does not support the video tag.
-          </video>
-          </center>
+    //     var $homePage= `<div class="background" id="content">
+    //     <div class="text-home">
+    //     <h1 id="main-title">SPACE & BEYOND</h1>
+    //     <h1 id="bookticket">Book your ticket now</h1>
+    //     <center>
+    //     <video id="home-vid" width="60%" height="40%" autoplay muted>
+    //         <source src="home vid.mp4.mp4" type="video/mp4">
+    //         <source src="movie.ogg" type="video/ogg">
+    //         Your browser does not support the video tag.
+    //       </video>
+    //       </center>
+    //       <div class="aboutus">
+    //       <p class="us">welcome to our space agency ,we are the first space 
+    //           agency in the hole world ,we are associating with the biggest 
+    //           company in this filed SPACEX so we can offer you the finest quality 
+    //           serveses ever and we make sure that you spend a life experience that you dream
+    //           about as Elon Musk said “You want to wake up in the morning and think the future
+    //            is going to be great - and that’s what being a spacefaring civilization is all about.
+    //             It’s about believing in the future and thinking that the future will be better than 
+    //             the past. And I can’t think of anything more exciting than going out there and being
+    //              among the stars.”   </p>
+    //              <div class="aboutimgs">
+    //                 <div class="images">
+    //                    <img src="./imgs/bg6.jpg">
+    //                    <img src="./imgs/bg3.jpg">
+    //                    <img src="./imgs/bg10.jpg">
+    //                    <img src="./imgs/bg11.jpg">
+    //                 </div>
+    //              </div>
+    //       <p class="policy">© 2021 BATagency GmbH
+    //         Unterdorf 37a | A–6135 Stans | Tel: +216 58 718 215
+            
+    //         office@BATagency.com
+            
+    //         Terms and conditions | Privacy policy | Imprint</p>
           
-    </div>
-    </div>`
-    $("#content").append($homePage)
-    })
+    //   </div>
+          
+    // </div>
+    // </div>`
+    // $("#content").append($homePage)
+    // })
     $("#tojupiter").click(function(){
         $("#content").html(" ")
         var $toJupiter =`<div class="jupiter">
@@ -231,6 +257,64 @@ $(document).ready(function(){
         $("#content").append($toMoon)
 
     })
+    $("#bo").click(function(){
+      $("#content").html(" ")
+      var $bookNow =  `div class="background" id="content">
+      <div class="text-home">
+          
+          <div class="login-box">
+              <h2>Book Now</h2>
+              <form>
+                <div class="user-box">
+                  <input id="namee" type="text" name="" required="">
+                  <label>Name</label>
+                </div>
+                <div  class="user-box">
+                  <input id="last"  type="text" name="" required="">
+                  <label>Last Name</label>
+                </div>
+                <div class="user-box">
+                  <input type="text" name="" required="">
+                  <label>Age</label>
+                </div>
+                <div class="user-box">
+                  
+                  <select   class="des" name="destination" id="select">
+                      <option  value="mars">Mars</option>
+                      <option  value="Jupiter">Jupiter</option>
+                      <option  value="Moon">Moon</option>
+                     
+                    </select>
+                  
+                </div>
+               
+                <div class="user-box">
+                  <input id="count" type="text" name="" required="">
+                  <label>Orifgin country</label>
+                </div>
+                <div class="user-box">
+                  <input id="num" type="text" name="" required="">
+                  <label>NumberPhone</label>
+                </div>
+                <div class="user-box">
+                  <input id="dcn" type="text" name="" required="">
+                  <label>Identy Card Number</label>
+                </div>
+             
+                <a href="#" onclick="add()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  
+                  Book Now
+                </a>
+              </form>
+            </div>
+      </div>
+       </div>`
+      $("#content").append($bookNow)
+  })
     var indexValue = 0;
          function slideShow(){
            setTimeout(slideShow, 1500);
@@ -244,7 +328,24 @@ $(document).ready(function(){
            img[indexValue -1].style.display = "block";
          }
          slideShow();
-
-         
-
 })
+
+
+
+
+
+function add(){
+  var nama =$("#namee").val();
+  var lasst =$("#last").val();
+  var country =$("#select").val();
+ 
+
+
+  if (nama==="" || lasst===""||country===""|| lasst===""){alert("You miss some thing");}
+  else {
+
+  $('.login-box').hide();
+  $("body").append(`<div class="newdivv"><p>`+
+    `${"Hello Mr/Ms "}${nama}${" "}${lasst}${" congratulations you have registred with us to  "}${country}${" we will call you soon"}</p></div>`);}
+  
+  }
