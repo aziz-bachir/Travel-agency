@@ -24,17 +24,14 @@
             </div>
             <div class="main_list" id="mainListDiv">
                 <div class="topnav">
-                    <input  id="cher" type="text" placeholder="Search..">
-                
-                <ul>
+                    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for galaxy"
+                        title="Enjoy in our space">
 
-                        
+                    <ul id="myUL">
                     <li id="tomars"><a > MARS</a></li>
                     <li id="tojupiter"><a > JUPITER</a></li>
                     <li id="tomoon"><a > MOON</a></li>
                     <li id="bo"><a > book now</a></li>
-                    
-                   
                  </ul>
                 </div>
             </div>    
@@ -54,7 +51,7 @@
             Your browser does not support the video tag.
           </video>
           <div class="aboutus">
-              <p class="us">welcome to our space agency ,we are the first space 
+              <p class="us">Welcome to our space agency ,we are the first space 
                   agency in the hole world ,we are associating with the biggest 
                   company in this filed SPACEX so we can offer you the finest quality 
                   serveses ever and we make sure that you spend a life experience that you dream
@@ -82,6 +79,27 @@
           
     </div>
     </div>
+    <script>
+        function myFunction() {
+
+            var input, filter, ul, li, a, i, txtValue;
+            input = document.getElementById('myInput');
+            filter = input.value.toUpperCase();
+            ul = document.getElementById("myUL");
+            li = ul.getElementsByTagName('li');
+
+
+            for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                txtValue = a.textContent || a.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    li[i].style.display = "";
+                } else {
+                    li[i].style.display = "none";
+                }
+            }
+        }
+    </script>
     
         
      <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>

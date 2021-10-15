@@ -4,7 +4,7 @@ $(document).ready(function(){
         var $toMars =  `<div class="mars-container"> 
         <style>
         body {
-          background-image: url('./imgs/bg9.jpg');
+          background-image: url('https://wallpaperaccess.com/full/1608.jpg');
           background-repeat: no-repeat;
           background-attachment: fixed;  
           background-size: cover;
@@ -345,7 +345,7 @@ function add(){
   else {
 
   $('.login-box').hide();
-  $("body").append(`<div class="newdivv"><p>`+
+  $("body").append(`<div class="newdivv"><p id ="msg">`+
     `${"Hello Mr/Ms "}${nama}${" "}${lasst}${" congratulations you have registred with us to  "}${country}${" we will call you soon"}</p></div>`);}
   
   }

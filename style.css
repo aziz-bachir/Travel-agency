@@ -452,3 +452,40 @@ label{border-radius: 20px;
     color: white;
     font-size: 30px;
 }
+#myInput {
+  background-image: url('/css/searchicon.png');
+  background-position: 10px 12px;
+  background-repeat: no-repeat;
+  width: 100%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  position: absolute;
+  top: 15px;
+  left: 25%;
+  width: 300px;
+  padding: 20px;
+    
+  
+  }
+  
+  #myUL {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  #myUL li a:hover:not(.header) {
+    background: black;
+    
+      color: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 5px #eaeff0,
+                  0 0 25px #f4f5f5,
+                  0 0 50px #f2f6f7,
+                  0 0 100px #f2f5f5;
+  }
+ 
